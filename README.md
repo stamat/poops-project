@@ -1,4 +1,4 @@
-# 💩 Shitstorm
+# 💩🌪️ Shitstorm
 
 [Poops](https://github.com/stamat/poops/) project template
 
