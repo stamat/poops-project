@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "Poops project template",
   "main": "src/scripts/script.js",
-  "style": "src/scripts/index.scss",
+  "style": "src/styles/index.scss",
   "homepage": "https://stamat.github.io/shitstorm/",
   "repository": {
     "type": "git",
