@@ -5,10 +5,18 @@
   <title>{{ page.title or site.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="{{ page.description or site.description }}">
-  <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/changelog/feed.rss">
+  
+  <!-- <link rel="icon" type="image/png" href="{{ relativePathPrefix }}dist/favicon.png"> -->
+
+  <meta property="og:title" content="{{ page.title or site.title }}" />
+  <meta property="og:description" content="{{ page.description or site.description }}" />
+  <!-- <meta property="og:image" content="" /> -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com"> 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="{{ relativePathPrefix }}dist/site.min.css">
   <link rel="stylesheet" href="{{ relativePathPrefix }}dist/style.min.css">
+  
   {% set fontparts = '' %}
   
   {% for font in fonts %}
