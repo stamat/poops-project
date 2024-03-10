@@ -28,7 +28,7 @@
     "poops": "^1.0.18"
   },
   "dependencies": {
-    "book-of-spells": "^1.0.22",
-    "sulphuris": "^1.0.5"
+    "book-of-spells": "^1.0.31",
+    "sulphuris": "^1.0.9"
   }
 }
