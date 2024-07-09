@@ -12,11 +12,6 @@
   <meta property="og:description" content="{{ page.description or site.description }}" />
   <!-- <meta property="og:image" content="" /> -->
 
-  <link rel="preconnect" href="https://fonts.googleapis.com"> 
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="{{ relativePathPrefix }}dist/site.min.css">
-  <link rel="stylesheet" href="{{ relativePathPrefix }}dist/style.min.css">
-  
   {% set fontparts = '' %}
   
   {% for font in fonts %}
@@ -30,6 +25,13 @@
       {% set fontparts = fontparts + "&family=" %}
     {% endif %}
   {% endfor %}
+
+  {% if fontparts.length != 0 %}
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  {% endif %}   
+  <link rel="stylesheet" href="{{ relativePathPrefix }}dist/site.min.css">
+  <link rel="stylesheet" href="{{ relativePathPrefix }}dist/style.min.css">
 
   {% if fontparts.length != 0 %}
     <link href="https://fonts.googleapis.com/css2?family={{ fontparts }}&display=swap" rel="stylesheet">
